@@ -1,45 +1,13 @@
-Differences between HTTP1 and HTTP2 
+DIFFERENCE BETWEEN  HTTP1.1 vs HTTP2
 
-HTTP1 :
-
-HTTP1 loads a single request for every Tcb connection.
-
-HTTP/1.1 for better understanding,
-            
-let's assume the situation when is make request to the serves for the geeksforgeeks.
-   
-html page & serves responds to u as resources geeksforgeeks.
-
-HTTP2 :
-
-HTTP2 is much faster and more reliable then HTTP1. 
-  
-HTTP2 aviods netwok delay by using multiplaning 
-
-HTTP/2 was developed over the spdy protocol.
-
-HTTP/2 works on the binary framing layes instead of textyar that converts all the messayer in binary format.
+HTTP=>HTTP stands for hypertext transfer protocol & it is used in client-server communication.
+HTTP user sends the request to the server & the server sends the response to the user.
 
 
-OBJECTS AND ITS INTERNAL REPRESENTATION IN JAVASCRIPT :
 
-Objects , in Javascript,it's most important data types and forms the building blocks for modern Javascript.
-
-These objects are quite difference from Javascript's primitive data types (Numbers,string,)Boolean,null,  undefined and symbol) in the sence that while these primitine data types all store single value each ( on their types).
-
-Objects are more complexand each object may contain any combination of these primitive data types as well as reference data types.
-
-
-JavaScript Objects :
-
-Booleans can be objects (if defined with the new keyword)
-            
-Numbers can be objects (if defined  with the new keyword)
-
-Strings can be objects (if defined with the new keyword)
-
-Dates are always objects.
-            
-Maths are always objects.
-
- Regular expressions are always objects.
+HTTP1.1                                                                  HTTP2                                                                 
+=>It works on the textual format.                                        =>It works on the binary protocol.
+=>There is head of line blocking that blocks all the requests            =>It allows multiplexing so one TCP connection is required for multiple requests.
+behind it until it doesn’t get its all resources.
+=>It uses requests resource Inlining for use getting multiple pages.     =>It uses PUSH frame by server that collects all multiple pages. 
+=>It compresses data by itself.                                          =>It uses HPACK for data compression.
